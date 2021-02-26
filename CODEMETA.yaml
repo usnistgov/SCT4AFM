@@ -20,13 +20,13 @@
 categories:
   - scientific-software
   # - ai-ml
-  #- simulation
+  - simulation
   #- visualization
   #- build-tools
   #- hpc-workflow
 themes:
   # - Advanced communications
-  # - Artificial intelligence
+   - Artificial intelligence
   # - Bioscience
   # - Buildings & Construction
   # - Chemistry
@@ -39,7 +39,7 @@ themes:
   # - Health
   # - Information Technology
   # - Infrastructure
-  # - Manufacturing
+  - Manufacturing
   # - Materials
   # - Mathematics & Statistics
   # - Metrology
