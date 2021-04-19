@@ -39,7 +39,8 @@ themes:
   # - Health
   # - Information Technology
   # - Infrastructure
-  - Manufacturing
+  - Manufacturing:
+    - Supply chain
   # - Materials
   # - Mathematics & Statistics
   # - Metrology
