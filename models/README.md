@@ -1,6 +1,6 @@
 # Folder for Semantic Traceability Models
-This project investigated two different approaches to defining ontologies for Critical Tracking Events (CTEs) and Key Data Elements (KDEs):
-* Extending an upper ontology : Basic Formal Ontology (BFO)
+This project investigated two different approaches for defining ontologies for Critical Tracking Events (CTEs) and Key Data Elements (KDEs):
+* Extending an upper ontology, the Basic Formal Ontology (BFO)
 * Using ontology modules
 Subfolders will be created for artifacts from each of these approaches.
 
