@@ -1,7 +1,7 @@
 # Supply Chain Traceability for Agri-Food Manufacturing
 
 This repository contains information models and data sets developed by the
-Engineering Laboratory's [Supply Chain Traceability for Agri-Food Manufacturing](https://www.nist.gov/programs-projects/supply-chain-traceability-agri-food-manufacturing) project.
+Engineering Laboratory's [Supply Chain Traceability for Agri-Food Manufacturing](https://www.nist.gov/programs-projects/supply-chain-traceability-agri-food-manufacturing) project and its partners.
 
 A principal deliverable is a machine-readable semantic model of entities and tracking events to enable grain production traceability. This model will provide guidance to supply chain stakeholders in both understanding what data must be collected for traceability and in identifying gaps in relevant standards. Increasing traceability of grain products reduces risk for producers and enables safer food and feed by allowing rapid determination of the source and the scope of contaminated material.  This in turn increases trust and safety in the agri-food supply chain. 
 
@@ -26,7 +26,7 @@ The repository has two types of assets:
 [Joshua Lubell](https://www.nist.gov/people/joshua-lubell) (NIST)  
 
 ### Licensing
-This software is the product of the National Institute of Standards and Technology. Refer to the LICENSE.md file for terms of use.
+Contents of this repository were developed by National Institute of Standards and Technology along with various partners. Refer to the LICENSE.md file in the subdirectory for each set of content for the contributors and terms of use of that content.
 
 ## Repository Status
 
