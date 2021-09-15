@@ -123,12 +123,12 @@ a.  **License grant**.
 
 5.  <ins>Downstream recipients</ins>.
 
-        A.  <ins>Offer from the Licensor – Licensed Material</ins>. Every
+A.  <ins>Offer from the Licensor – Licensed Material</ins>. Every
             recipient of the Licensed Material automatically receives
             an offer from the Licensor to exercise the Licensed Rights
             under the terms and conditions of this Public License.
 
-        B.  <ins>No downstream restrictions</ins>. You may not offer or
+B.  <ins>No downstream restrictions</ins>. You may not offer or
             impose any additional or different terms or conditions on,
             or apply any Effective Technological Measures to, the
             Licensed Material if doing so restricts exercise of the
@@ -143,7 +143,7 @@ a.  **License grant**.
 
 b.  **Other rights.**
 
-    1.  Moral rights, such as the right of integrity, are not licensed
+1.  Moral rights, such as the right of integrity, are not licensed
         under this Public License, nor are publicity, privacy, and/or
         other similar personality rights; however, to the extent
         possible, the Licensor waives and/or agrees not to assert any
@@ -151,10 +151,10 @@ b.  **Other rights.**
         necessary to allow You to exercise the Licensed Rights, but
         not otherwise.
 
-    2.  Patent and trademark rights are not licensed under this Public
+2.  Patent and trademark rights are not licensed under this Public
         License.
 
-    3.  To the extent possible, the Licensor waives any right to collect
+3.  To the extent possible, the Licensor waives any right to collect
         royalties from You for the exercise of the Licensed Rights,
         whether directly or through a collecting society under any
         voluntary or waivable statutory or compulsory licensing
@@ -168,45 +168,45 @@ following conditions.
 
 a.  **Attribution**.
 
-    1.  If You Share the Licensed Material (including in modified form),
+1.  If You Share the Licensed Material (including in modified form),
         You must:
 
-        A.  retain the following if it is supplied by the Licensor with
+A.  retain the following if it is supplied by the Licensor with
             the Licensed Material:
 
-            i.  identification of the creator(s) of the Licensed
+i.  identification of the creator(s) of the Licensed
                 Material and any others designated to receive
                 attribution, in any reasonable manner requested by the
                 Licensor (including by pseudonym if designated);
 
-            ii.  a copyright notice;
+ii.  a copyright notice;
 
-            iii.  a notice that refers to this Public License;
+iii.  a notice that refers to this Public License;
 
-            iv.  a notice that refers to the disclaimer of warranties;
+iv.  a notice that refers to the disclaimer of warranties;
 
-            v.  a URI or hyperlink to the Licensed Material to the
+v.  a URI or hyperlink to the Licensed Material to the
                 extent reasonably practicable;
 
-        B.  indicate if You modified the Licensed Material and retain an
+B.  indicate if You modified the Licensed Material and retain an
             indication of any previous modifications; and
 
-        C.  indicate the Licensed Material is licensed under this Public
+C.  indicate the Licensed Material is licensed under this Public
             License, and include the text of, or the URI or hyperlink
             to, this Public License.
 
-    2.  You may satisfy the conditions in Section 3(a)(1) in any
+2.  You may satisfy the conditions in Section 3(a)(1) in any
         reasonable manner based on the medium, means, and context in
         which You Share the Licensed Material. For example, it may be
         reasonable to satisfy the conditions by providing a URI or
         hyperlink to a resource that includes the required
         information.
 
-    3.  If requested by the Licensor, You must remove any of the
+3.  If requested by the Licensor, You must remove any of the
         information required by Section 3(a)(1)(A) to the extent
         reasonably practicable.
 
-    4.  If You Share Adapted Material You produce, the Adapter's License
+4.  If You Share Adapted Material You produce, the Adapter's License
         You apply must not prevent recipients of the Adapted Material
         from complying with this Public License.
 
@@ -254,8 +254,6 @@ b.  To the extent possible, in no event will the Licensor be liable to
     limitation of liability is not allowed in full or in part, this
     limitation may not apply to You.
 
-<!-- -->
-
 c.  The disclaimer of warranties and limitation of liability provided
     above shall be interpreted in a manner that, to the extent possible,
     most closely approximates an absolute disclaimer and waiver of all
@@ -271,10 +269,10 @@ a.  This Public License applies for the term of the Copyright and
 b.  Where Your right to use the Licensed Material has terminated under
     Section 6(a), it reinstates:
 
-    1.  automatically as of the date the violation is cured, provided it
+1.  automatically as of the date the violation is cured, provided it
         is cured within 30 days of Your discovery of the violation; or
 
-    2.  upon express reinstatement by the Licensor.
+2.  upon express reinstatement by the Licensor.
 
 For the avoidance of doubt, this Section 6(b) does not affect any right
 the Licensor may have to seek remedies for Your violations of this
