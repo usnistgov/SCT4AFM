@@ -16,7 +16,6 @@ of, publicly display, publicly perform, sublicense, and distribute any
 such contributions and derivatives, outside of the United States.
 
 # **Creative Commons Attribution 4.0 International Public License (CC BY 4.0)**
-glow
 By exercising the Licensed Rights (defined below), You accept and
 agree to be bound by the terms and conditions of this Creative Commons
 Attribution 4.0 International Public License ("Public License"). To
@@ -92,7 +91,7 @@ k. **You** means the individual or entity exercising the Licensed
 
 a.  **License grant**.
 
-    1.  Subject to the terms and conditions of this Public License, the
+1.  Subject to the terms and conditions of this Public License, the
         Licensor hereby grants You a worldwide, royalty-free,
         non-sublicensable, non-exclusive, irrevocable license to
         exercise the Licensed Rights in the Licensed Material to:
@@ -102,15 +101,15 @@ a.  **License grant**.
 
         B.  produce, reproduce, and Share Adapted Material.
 
-    2.  <ins>Exceptions and Limitations</ins>. For the avoidance of doubt,
+2.  <ins>Exceptions and Limitations</ins>. For the avoidance of doubt,
         where Exceptions and Limitations apply to Your use, this
         Public License does not apply, and You do not need to comply
         with its terms and conditions.
 
-    3.  <ins>Term</ins>. The term of this Public License is specified in
+3.  <ins>Term</ins>. The term of this Public License is specified in
         Section 6(a).
 
-    4.  <ins>Media and formats; technical modifications allowed</ins>. The
+4.  <ins>Media and formats; technical modifications allowed</ins>. The
         Licensor authorizes You to exercise the Licensed Rights in all
         media and formats whether now known or hereafter created, and
         to make technical modifications necessary to do so. The
@@ -122,7 +121,7 @@ a.  **License grant**.
         modifications authorized by this Section 2(a)(4) never
         produces Adapted Material.
 
-    5.  <ins>Downstream recipients</ins>.
+5.  <ins>Downstream recipients</ins>.
 
         A.  <ins>Offer from the Licensor – Licensed Material</ins>. Every
             recipient of the Licensed Material automatically receives
@@ -135,14 +134,14 @@ a.  **License grant**.
             Licensed Material if doing so restricts exercise of the
             Licensed Rights by any recipient of the Licensed Material.
 
-    6.  <ins>No endorsement</ins>. Nothing in this Public License
+6.  <ins>No endorsement</ins>. Nothing in this Public License
         constitutes or may be construed as permission to assert or
         imply that You are, or that Your use of the Licensed Material
         is, connected with, or sponsored, endorsed, or granted
         official status by, the Licensor or others designated to
         receive attribution as provided in Section 3(a)(1)(A)(i).
 
-b.  **Other rights**.
+b.  **Other rights.**
 
     1.  Moral rights, such as the right of integrity, are not licensed
         under this Public License, nor are publicity, privacy, and/or
