@@ -26,7 +26,7 @@ The repository has two types of assets:
 [Joshua Lubell](https://www.nist.gov/people/joshua-lubell) (NIST)  
 
 ### Licensing
-Contents of this repository were developed by National Institute of Standards and Technology along with various partners. Refer to the LICENSE.md file in the subdirectory for each set of content for the contributors and terms of use of that content.
+Contents of this repository were developed by National Institute of Standards and Technology along with various partners. Refer to the LICENSE.txt or LICENSE.md file in the subdirectory for each set of content for the contributors and terms of use for that content.
 
 ## Repository Status
 
