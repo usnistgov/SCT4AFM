@@ -9,8 +9,8 @@ The ontology can be loaded into any ontology editor that can read OWL rdf/xml fi
 Evan K. Wallace, Farhad Ameri, Reid Yoder. [Enabling Traceability in Agri-Food Supply Chains Using an Ontological Approach](https://doi.org/10.1115/DETC2020-22672)
 
 ## Contacts
-[Evan K. Wallace](https://www.nist.gov/people/evan-k-wallace) (NIST) - POC
-[Dr. Farhad Ameri](https://faculty.txstate.edu/profile/1922434) (TSU)
+[Evan K. Wallace](https://www.nist.gov/people/evan-k-wallace) (NIST) - POC   
+[Dr. Farhad Ameri](https://faculty.txstate.edu/profile/1922434) (TSU)  
 
 ## Licensing
 Contents of this directory were developed by Texas State University and the National Institute of Standards and Technology. Refer to the LICENSE.txt file in this directory for terms of use of this content.
