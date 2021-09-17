@@ -3,7 +3,7 @@
 This project investigated two different approaches for defining ontologies (i.e. semantic models) for Critical Tracking Events (CTEs) and Key Data Elements (KDEs) (see below), which are the key notions related to traceability for food. The two approaches were:
 
 1. *Upper Ontology Extension* ([upper-ont-approach](https://github.com/usnistgov/SCT4AFM/tree/master/models/upper-ont-approach)): We extend the Basic Formal Ontology (BFO), an upper ontology, using the principles of the Industrial Ontology Foundry. The resulting model focuses on specific scenarios/use cases involving grain supply chains that domain experts have highlighted; it incrementally develops and then uses a traceability model to address domain user needs.
-2. *Modular Ontology Refinement*: This approach uses modular modeling to develop a rich ontology for full end-to-end traceability of grain supply chains. Stay tuned for a model based on this approach.
+2. *Modular Ontology Refinement* ([modular-ont-approach](https://github.com/usnistgov/SCT4AFM/tree/master/models/modular-ont-approach)): This approach uses modular modeling to develop a rich ontology for full end-to-end traceability of grain supply chains. Stay tuned for a model based on this approach.
 
 The Upper Ontology Extension approach was developed by teams from the [Engineering Informatics Research Group (INFONEER)](https://infoneer.wp.txstate.edu/) at Texas State University and the [NIST Supply Chain Traceability (SCT4AFM) project](https://www.nist.gov/programs-projects/supply-chain-traceability-agri-food-manufacturing). 
 
