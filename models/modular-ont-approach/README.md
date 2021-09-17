@@ -18,7 +18,7 @@ Finally, the following infographic lays out the relationship among the TRU, Cont
 
 ![TRU-Container](https://user-images.githubusercontent.com/78493839/121057990-df8fee00-c78d-11eb-99d6-5cdff8197e7e.jpg)
 ## Loading the ontology
-The ontology can be loaded into any ontology editor that can read OWL rdf/xml files.  The open source [Protégé](https://protege.stanford.edu) editor from Stanford University is one example. The ontology is self-contained and requires no other OWL modules in order to view or use it.
+The ontology can be loaded into any ontology editor that can read OWL rdf/xml files.  The open source [Protégé](https://protege.stanford.edu) editor from Stanford University is one example. The ontology is self-contained and requires no other OWL modules in order to view or use.
 ## Licensing
 Contents of this directory were developed by Kansas State University and the National Institute of Standards and Technology. Refer to the LICENSE.txt file in this directory for terms of use of this content.
 ## Citations
