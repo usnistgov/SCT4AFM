@@ -6,20 +6,21 @@
      xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sct="http://infoneer.txstate.edu/Traceability/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:iof-av="http://www.industrialontologies.org/IOFAnnotationVocabulary/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:Traceability="http://infoneer.txstate.edu/Traceability#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://infoneer.txstate.edu/Traceability">
         <owl:versionIRI rdf:resource="http://infoneer.txstate.edu/2021/Traceability"/>
         <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
         <terms:description>A BFO-comformant ontology for traceability in agri-food supply chains.</terms:description>
         <terms:title>Supply Chain Traceability (SCT)</terms:title>
         <terms:title>Supply Chain Traceability (SCT) Ontology</terms:title>
+        <iof-av:maintainer>Texas State University - Engineering Informatics Research Group</iof-av:maintainer>
         <iof-av:usageNote>This ontology uses the IOF annotation properties for term definition. 
 
 1. The intention of using annotations is to 
@@ -519,19 +520,19 @@ Units of Measure: Km, Kg, G</skos:example>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#HasPart -->
+    <!-- http://infoneer.txstate.edu/Traceability/HasPart -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#HasPart">
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/HasPart">
         <rdfs:label>has part</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#OccursAt -->
+    <!-- http://infoneer.txstate.edu/Traceability/OccursAt -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#OccursAt">
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/OccursAt">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/occurs_in"/>
-        <owl:inverseOf rdf:resource="http://infoneer.txstate.edu/Traceability#is_site_of"/>
+        <owl:inverseOf rdf:resource="http://infoneer.txstate.edu/Traceability/is_site_of"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range>
             <owl:Class>
@@ -547,37 +548,37 @@ Units of Measure: Km, Kg, G</skos:example>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PartOf -->
+    <!-- http://infoneer.txstate.edu/Traceability/PartOf -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#PartOf">
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/PartOf">
         <rdfs:label>part of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#agentIn -->
+    <!-- http://infoneer.txstate.edu/Traceability/agentIn -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#agentIn">
-        <rdfs:subPropertyOf rdf:resource="http://infoneer.txstate.edu/Traceability#participatesIn"/>
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/agentIn">
+        <rdfs:subPropertyOf rdf:resource="http://infoneer.txstate.edu/Traceability/participatesIn"/>
         <rdfs:label>agent in</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#conveyance -->
+    <!-- http://infoneer.txstate.edu/Traceability/conveyance -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#conveyance">
-        <rdfs:subPropertyOf rdf:resource="http://infoneer.txstate.edu/Traceability#participatesIn"/>
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/conveyance">
+        <rdfs:subPropertyOf rdf:resource="http://infoneer.txstate.edu/Traceability/participatesIn"/>
         <rdfs:comment>piece of equipment that performs the physical transfer</rdfs:comment>
         <skos:definition>The entity (typically a mechanism) responsible for movement.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ends_at -->
+    <!-- http://infoneer.txstate.edu/Traceability/ends_at -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#ends_at">
-        <rdfs:subPropertyOf rdf:resource="http://infoneer.txstate.edu/Traceability#OccursAt"/>
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/ends_at">
+        <rdfs:subPropertyOf rdf:resource="http://infoneer.txstate.edu/Traceability/OccursAt"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range>
             <owl:Class>
@@ -587,24 +588,24 @@ Units of Measure: Km, Kg, G</skos:example>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <cco:definition>An instance level relation that holds between instances of Processual Entities and Spatial Regions or Site whevever some spatial region or site is the location in which the process ends.</cco:definition>
+        <iof-av:semi-formalNaturalLanguageDefinition>An instance level relation that holds between instances of Processual Entities and Spatial Regions or Site whevever some spatial region or site is the location in which the process ends.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>ends at</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#hasBeginningInstant -->
+    <!-- http://infoneer.txstate.edu/Traceability/hasBeginningInstant -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#hasBeginningInstant">
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/hasBeginningInstant">
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
         <rdfs:label>has beginning instant</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#hasEndingInstant -->
+    <!-- http://infoneer.txstate.edu/Traceability/hasEndingInstant -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#hasEndingInstant">
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/hasEndingInstant">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
@@ -613,10 +614,10 @@ Units of Measure: Km, Kg, G</skos:example>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#has_portion -->
+    <!-- http://infoneer.txstate.edu/Traceability/has_portion -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#has_portion">
-        <owl:inverseOf rdf:resource="http://infoneer.txstate.edu/Traceability#portion_of"/>
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/has_portion">
+        <owl:inverseOf rdf:resource="http://infoneer.txstate.edu/Traceability/portion_of"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:label>has portion</rdfs:label>
@@ -624,47 +625,47 @@ Units of Measure: Km, Kg, G</skos:example>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#is_site_of -->
+    <!-- http://infoneer.txstate.edu/Traceability/is_site_of -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#is_site_of">
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/is_site_of">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
         <rdfs:label>is site of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#participatesIn -->
+    <!-- http://infoneer.txstate.edu/Traceability/participatesIn -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#participatesIn">
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/participatesIn">
         <rdfs:label>participates in</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#portion_of -->
+    <!-- http://infoneer.txstate.edu/Traceability/portion_of -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#portion_of">
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/portion_of">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <bfo:IAO_0000112>relating portion of object aggregare to a whole</bfo:IAO_0000112>
-        <bfo:IAO_0000112>this 200 bu of wheat is portion of this larger amount of wheat in this container</bfo:IAO_0000112>
+        <iof-av:naturalLanguageDefinition>A relationship relating portion of object aggregare to a whole</iof-av:naturalLanguageDefinition>
         <rdfs:label>portion of</rdfs:label>
+        <skos:example>this 200 bu of wheat is portion of this larger amount of wheat in this container</skos:example>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#process_part_of -->
+    <!-- http://infoneer.txstate.edu/Traceability/process_part_of -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#process_part_of">
-        <rdfs:subPropertyOf rdf:resource="http://infoneer.txstate.edu/Traceability#PartOf"/>
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/process_part_of">
+        <rdfs:subPropertyOf rdf:resource="http://infoneer.txstate.edu/Traceability/PartOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#starts_at -->
+    <!-- http://infoneer.txstate.edu/Traceability/starts_at -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#starts_at">
-        <rdfs:subPropertyOf rdf:resource="http://infoneer.txstate.edu/Traceability#OccursAt"/>
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/starts_at">
+        <rdfs:subPropertyOf rdf:resource="http://infoneer.txstate.edu/Traceability/OccursAt"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range>
             <owl:Class>
@@ -674,15 +675,15 @@ Units of Measure: Km, Kg, G</skos:example>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <cco:definition>An instance level relation that holds between instances of Processual Entities and Spatial Regions or Site whevever some spatial region or site is the location in which the process begins.</cco:definition>
+        <iof-av:semi-formalNaturalLanguageDefinition>An instance level relation that holds between instances of Processual Entities and Spatial Regions or Site whevever some spatial region or site is the location in which the process begins.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>starts at</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#uses_measurement_unit -->
+    <!-- http://infoneer.txstate.edu/Traceability/uses_measurement_unit -->
 
-    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability#uses_measurement_unit">
+    <owl:ObjectProperty rdf:about="http://infoneer.txstate.edu/Traceability/uses_measurement_unit">
         <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnit"/>
     </owl:ObjectProperty>
@@ -705,7 +706,6 @@ Units of Measure: Km, Kg, G</skos:example>
         <dc:identifier>206-BFO</dc:identifier>
         <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">has realization</rdfs:label>
         <rdfs:label xml:lang="en">realized in</rdfs:label>
         <skos:definition xml:lang="en">b has realization c =Def c realizes b</skos:definition>
         <skos:example xml:lang="en">As for realizes</skos:example>
@@ -2398,74 +2398,76 @@ range: spatial region or site (immaterial continuant)
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Act -->
+    <!-- http://infoneer.txstate.edu/Traceability/Act -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Act">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <iof-av:firstOrderLogicDefinition>instance-of(x, action, t) ≡ ∃y (instance-of(y, agent, t) &amp; has-agent (x, y, t))
-
-Additional axiom: Every Action realizes some Intention that precedes it or starts simultaneously with it. 
-instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; realizes (x, y) &amp; (precedes(t′, t) ˅ first-instant(t′, t)))</iof-av:firstOrderLogicDefinition>
-        <iof-av:semi-formalNaturalLanguageDefinition>Process in which some Agent plays a causitive role.</iof-av:semi-formalNaturalLanguageDefinition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Act">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PlannedProcess"/>
+        <iof-av:firstOrderLogicDefinition>AgentiveProcess(x) ↔ PlannedProcess(x) ∧ ∃y ((Agent(y) ∨ GroupOfAgents(y)) ∧ hasParticipantInAtSomeTime Agent (x, y))</iof-av:firstOrderLogicDefinition>
+        <iof-av:semi-formalNaturalLanguageDefinition>Agentive Process is a Planned Process that &apos;&apos;has participant at some time&apos;, some Agent or Group of Agents.</iof-av:semi-formalNaturalLanguageDefinition>
         <cco:alternative_label>Action</cco:alternative_label>
         <rdfs:label>Agentive Process</rdfs:label>
+        <skos:example>An automated CNC machining center loads the next part into its fixture and machines a part as per some part program and production work order operation (collectively the set of plan specifications that prescribes what the machine is to do for the next timeperiod.
+
+A person plays his first game of chess after reading Dummy&apos;s Guide to Playing Chess.
+
+John runs to the store to buy a few groceries items as prescribed by voice command from his spouse.</skos:example>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ActOfFoodProcessing -->
+    <!-- http://infoneer.txstate.edu/Traceability/ActOfFoodProcessing -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ActOfFoodProcessing">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PlannedProcess"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ActOfFoodProcessing">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PlannedProcess"/>
         <rdfs:label>Act of Food Processing</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ActOfLocationChange -->
+    <!-- http://infoneer.txstate.edu/Traceability/ActOfLocationChange -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ActOfLocationChange">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#ActOfMotion"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ActOfLocationChange">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/ActOfMotion"/>
         <iof-av:semi-formalNaturalLanguageDefinition>An Act of Motion in which the location of some Object is changed by some Agent.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Act of Location Change</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ActOfMotion -->
+    <!-- http://infoneer.txstate.edu/Traceability/ActOfMotion -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ActOfMotion">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PlannedProcess"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ActOfMotion">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PlannedProcess"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Planned Process by which an Agent causes the position or location of some Object to change.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Act of Motion</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#AgriculturalFacility -->
+    <!-- http://infoneer.txstate.edu/Traceability/AgriculturalFacility -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#AgriculturalFacility">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Facility"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/AgriculturalFacility">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Facility"/>
         <bfo:IAO_0000119>https://en.wikipedia.org/wiki/Agriculture</bfo:IAO_0000119>
         <cco:definition>A Facility that is designed as a building or campus for agricultural processes with the aim of cultivating animals, plants, and fungi for food, fiber, biofuel, medicinal plants, and other products to sustain and enhance human life.</cco:definition>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Aircraft -->
+    <!-- http://infoneer.txstate.edu/Traceability/Aircraft -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Aircraft">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Vehicle"/>
-        <cco:definition>A Vehicle that is designed to convey passengers, cargo, or equipment from one location to another by air travel.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Aircraft">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Vehicle"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Vehicle that is designed to convey passengers, cargo, or equipment from one location to another by air travel.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Aircraft</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#AstronomicalBody -->
+    <!-- http://infoneer.txstate.edu/Traceability/AstronomicalBody -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#AstronomicalBody">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#AstronomicalObject"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/AstronomicalBody">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/AstronomicalObject"/>
         <dc:source>http://purl.obolibrary.org/obo/ENVO_01000799</dc:source>
         <cco:definition>An Astronomical Object which is naturally occuring, bound together by gravitational or electromagnetic forces, and surrounded by space</cco:definition>
         <rdfs:label>Astronomial Body</rdfs:label>
@@ -2473,9 +2475,9 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#AstronomicalObject -->
+    <!-- http://infoneer.txstate.edu/Traceability/AstronomicalObject -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#AstronomicalObject">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/AstronomicalObject">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <dc:source>http://purl.obolibrary.org/obo/ENVO_01000804</dc:source>
         <cco:definition>An object which is composed of one or more gravitationally bound structures that are associated with a position in space.</cco:definition>
@@ -2484,18 +2486,9 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Bin -->
+    <!-- http://infoneer.txstate.edu/Traceability/Bushel -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Bin">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#StorageContainer"/>
-        <bfo:IAO_0000600>tall storage container grain at an elevator/processor/manufacturer  </bfo:IAO_0000600>
-    </owl:Class>
-    
-
-
-    <!-- http://infoneer.txstate.edu/Traceability#Bushel -->
-
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Bushel">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Bushel">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnitOfVolume"/>
         <iof-av:abbreviation>bsh</iof-av:abbreviation>
         <iof-av:naturalLanguageDefinition>a measure of volume equal to 64 US pints (equivalent to 35.2 liters), used for dry goods</iof-av:naturalLanguageDefinition>
@@ -2505,17 +2498,17 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#CalibrationEvent -->
+    <!-- http://infoneer.txstate.edu/Traceability/CalibrationEvent -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#CalibrationEvent">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#MaintenanceEvent"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/CalibrationEvent">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/MaintenanceEvent"/>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#CenterOfMass -->
+    <!-- http://infoneer.txstate.edu/Traceability/CenterOfMass -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#CenterOfMass">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/CenterOfMass">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
         <iof-av:adaptedFrom>CCO</iof-av:adaptedFrom>
         <iof-av:semi-formalNaturalLanguageDefinition>A Zero-Dimensional Spatial Region that is the point where the weighted position vectors of the distributed Mass of a Material Entity relative to this point sum to zero.</iof-av:semi-formalNaturalLanguageDefinition>
@@ -2524,9 +2517,9 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Change -->
+    <!-- http://infoneer.txstate.edu/Traceability/Change -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Change">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Change">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <iof-av:directSource>Common Core Ontologies</iof-av:directSource>
         <iof-av:semi-formalNaturalLanguageDefinition>A Process in which some independent continuant endures and 1) one or more of the dependent entities it bears increase or decrease in intensity, 2) the entity begins to bear some dependent entity or 3) the entity ceases to bear some dependent entity.</iof-av:semi-formalNaturalLanguageDefinition>
@@ -2534,75 +2527,75 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#City -->
+    <!-- http://infoneer.txstate.edu/Traceability/City -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#City">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/City">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/LocalAdministrativeRegion"/>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#CleaningEvent -->
+    <!-- http://infoneer.txstate.edu/Traceability/CleaningEvent -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#CleaningEvent">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#MaintenanceEvent"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/CleaningEvent">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/MaintenanceEvent"/>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Combine -->
+    <!-- http://infoneer.txstate.edu/Traceability/Combine -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Combine">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PieceOfAgriculturalEquipment"/>
-        <bfo:IAO_0000118>Harvester</bfo:IAO_0000118>
-        <cco:definition>A Piece of Agricultural Equipment designed to harvest grain crops.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Combine">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PieceOfAgriculturalEquipment"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Piece of Agricultural Equipment designed to harvest grain crops.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:comment>Harvester is a general term for farm equipment that harvests grain from a field with small container capacity.  </rdfs:comment>
+        <skos:altLabel>Harvester</skos:altLabel>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#CombineTank -->
+    <!-- http://infoneer.txstate.edu/Traceability/CombineTank -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#CombineTank">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#ContainerArtifact"/>
-        <cco:definition>A Transport Container that is part of a combine and is designed to function as the container of grains during harvest.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/CombineTank">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/ContainerArtifact"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Transport Container that is part of a Combine and is designed to contain Grains during some Harvest Process</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Combine Tank</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#CombineTankContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/CombineTankContainer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#CombineTankContainer">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/CombineTankContainer">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#CombineTank"/>
+                    <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/CombineTank"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                        <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability#ContainerRole"/>
+                        <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability/ContainerRole"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Container"/>
-        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability#ShippingContainer"/>
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Container"/>
+        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability/ShippingContainer"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Combine Tank that bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Combine Tank Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Container -->
+    <!-- http://infoneer.txstate.edu/Traceability/Container -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Container">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Container">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                        <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability#ContainerRole"/>
+                        <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability/ContainerRole"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2614,48 +2607,49 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ContainerArtifact -->
+    <!-- http://infoneer.txstate.edu/Traceability/ContainerArtifact -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ContainerArtifact">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PieceOfTtarnsportEquipment"/>
-        <cco:definition>Piece of Transport Equipment that is designed to contain (wholly or partially) some material entity.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ContainerArtifact">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PieceOfTtarnsportEquipment"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>Piece of Transport Equipment that is designed to wholly or partially contain some material entity during some transport process.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Transport Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ContainerDescription -->
+    <!-- http://infoneer.txstate.edu/Traceability/ContainerDescription -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ContainerDescription">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ContainerDescription">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
-        <iof-av:semi-formalNaturalLanguageDefinition>A Descriptive Information Content Entity that describes a Container or a Container Artifact.</iof-av:semi-formalNaturalLanguageDefinition>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Descriptive Information Content Entity that describes the characteristics of some Container or Container Artifact.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Container Description</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ContainerID -->
+    <!-- http://infoneer.txstate.edu/Traceability/ContainerID -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ContainerID">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ContainerID">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeIdentifier"/>
-        <iof-av:semi-formalNaturalLanguageDefinition>A Code Identifer that designates a Container or Container Artifact.</iof-av:semi-formalNaturalLanguageDefinition>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Code Identifer that designates some Container or Container Artifact.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Container ID</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ContainerInterior -->
+    <!-- http://infoneer.txstate.edu/Traceability/ContainerInterior -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ContainerInterior">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ContainerInterior">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <iof-av:semi-formalNaturalLanguageDefinition>A site bound by physical boundaries or surfaces of a container artifact.</iof-av:semi-formalNaturalLanguageDefinition>
+        <iof-av:semi-formalNaturalLanguageDefinition>A site bound by physical boundaries or surfaces of a Container Artifact or some object that bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Container Interior</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ContainerRole -->
+    <!-- http://infoneer.txstate.edu/Traceability/ContainerRole -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ContainerRole">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ContainerRole">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A role inhered in an object or fiat object part when it wholly or partially contains some material entity.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Container Role</rdfs:label>
@@ -2663,9 +2657,9 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ContainingArtifcatFunction -->
+    <!-- http://infoneer.txstate.edu/Traceability/ContainingArtifcatFunction -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ContainingArtifcatFunction">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ContainingArtifcatFunction">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <cco:definition>An Artifact Function that is realized in a process in which one entity contains another.</cco:definition>
         <rdfs:label>Containing Artifact Function</rdfs:label>
@@ -2673,9 +2667,9 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#CriticalTrackingEvent -->
+    <!-- http://infoneer.txstate.edu/Traceability/CriticalTrackingEvent -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#CriticalTrackingEvent">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/CriticalTrackingEvent">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <iof-av:explanatoryNote>An occurrence where information is captured representing history relevant to a product’s genealogy.  This includes occurrences to product or material, as well as occurrences involving equipment with which product or material came into contact.  Tracking event records are used to reconstruct material history later during analysis.</iof-av:explanatoryNote>
         <iof-av:semi-formalNaturalLanguageDefinition>An occurrent that has at least one Trace Unit or Equipment (with which TRU comes into contact with) or Operator (that runs an Equipment with which TRU comes into contact with at some time) as participant .</iof-av:semi-formalNaturalLanguageDefinition>
@@ -2684,46 +2678,46 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#CustodyChangeEvent -->
+    <!-- http://infoneer.txstate.edu/Traceability/CustodyChangeEvent -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#CustodyChangeEvent">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#CriticalTrackingEvent"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/CustodyChangeEvent">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/CriticalTrackingEvent"/>
         <rdfs:label>Custody Change Event</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Earth -->
+    <!-- http://infoneer.txstate.edu/Traceability/Earth -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Earth">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Planet"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Earth">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Planet"/>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#EventIdentifier -->
+    <!-- http://infoneer.txstate.edu/Traceability/EventIdentifier -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#EventIdentifier">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/EventIdentifier">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
-        <iof-av:semi-formalNaturalLanguageDefinition>A Designative Information Content Entity that designates some Events.</iof-av:semi-formalNaturalLanguageDefinition>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Designative Information Content Entity that designates some Event.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Event Identifier</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Facility -->
+    <!-- http://infoneer.txstate.edu/Traceability/Facility -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Facility">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Facility">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <iof-av:naturalLanguageDefinition>An Artifact that is designed as a building or campus dedicated to some specific purpose.</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Farm -->
+    <!-- http://infoneer.txstate.edu/Traceability/Farm -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Farm">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#AgriculturalFacility"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Farm">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/AgriculturalFacility"/>
         <iof-av:naturalLanguageDefinition>An Agricultural Facility composed of fields, buildings, and storage facilities used for growing crops or keeping animals as a business.</iof-av:naturalLanguageDefinition>
         <rdfs:comment>field i spart of farm</rdfs:comment>
         <rdfs:label>Farm</rdfs:label>
@@ -2731,9 +2725,9 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#FarmSite -->
+    <!-- http://infoneer.txstate.edu/Traceability/FarmSite -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#FarmSite">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/FarmSite">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GeospatialLocation"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Geospatial Location that is the location of a Farm.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Farm Site</rdfs:label>
@@ -2741,29 +2735,29 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Field -->
+    <!-- http://infoneer.txstate.edu/Traceability/Field -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Field">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PieceOfLand"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Field">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PieceOfLand"/>
         <iof-av:naturalLanguageDefinition>A piece of land used for agricultural purpose.</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#FieldContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/FieldContainer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#FieldContainer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Container"/>
-        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability#ShippingContainer"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/FieldContainer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Container"/>
+        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability/ShippingContainer"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Field that bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Field Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#FieldSite -->
+    <!-- http://infoneer.txstate.edu/Traceability/FieldSite -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#FieldSite">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/FieldSite">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GeospatialLocation"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Geospatial Location that is the location of a Field or a Sub-Field.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:comment></rdfs:comment>
@@ -2772,20 +2766,20 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GainOfQuality -->
+    <!-- http://infoneer.txstate.edu/Traceability/GainOfQuality -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GainOfQuality">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Change"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GainOfQuality">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Change"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Change process in which an Independent Continuant becomes the bearer of some Quality.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Gain of Quality</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GainOfRole -->
+    <!-- http://infoneer.txstate.edu/Traceability/GainOfRole -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GainOfRole">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Change"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GainOfRole">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Change"/>
         <iof-av:explanatoryNote>This class should be used to demarcate the start of the temporal interval (through the &apos;occurs on&apos; property) that the Entity bears the Role.</iof-av:explanatoryNote>
         <iof-av:semi-formalNaturalLanguageDefinition>A Change process in which some Independent Continuant becomes bearer of some Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Gain of Role</rdfs:label>
@@ -2793,9 +2787,9 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GeospatialPosition -->
+    <!-- http://infoneer.txstate.edu/Traceability/GeospatialPosition -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GeospatialPosition">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GeospatialPosition">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A fiat point that is at or near the surface of the Earth and fixed according to some Geospatial Coordinate Reference System.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Geospatial Position</rdfs:label>
@@ -2803,20 +2797,20 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GlobalLocationNumber -->
+    <!-- http://infoneer.txstate.edu/Traceability/GlobalLocationNumber -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GlobalLocationNumber">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GlobalLocationNumber">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeIdentifier"/>
-        <cco:alternative_label>GLN</cco:alternative_label>
-        <rdfs:comment>A GLN is a 13-digit number consisting of a GS1 company prefix, a location reference, and a check digit.</rdfs:comment>
+        <iof-av:acronym>GLN</iof-av:acronym>
+        <iof-av:naturalLanguageDefinition>A GLN is a 13-digit number consisting of a GS1 company prefix, a location reference, and a check digit.</iof-av:naturalLanguageDefinition>
         <rdfs:label>Global Location Number</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Grain -->
+    <!-- http://infoneer.txstate.edu/Traceability/Grain -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Grain">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Grain">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <iof-av:naturalLanguageDefinition>A small, hard, dry seed, with or without an attached hull or fruit layer, harvested for human or animal consumption</iof-av:naturalLanguageDefinition>
         <skos:example>wheat, rice, corn</skos:example>
@@ -2824,50 +2818,72 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GrainBinContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/GrainBin -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GrainBinContainer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Container"/>
-        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability#ShippingContainer"/>
-        <iof-av:semi-formalNaturalLanguageDefinition>A Graon Bin hat bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GrainBin">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/StorageContainer"/>
+        <iof-av:naturalLanguageDefinition>tall metalic storage container with cylindrical body and a peaked roof used for on-farm grain storage</iof-av:naturalLanguageDefinition>
+        <rdfs:label>Grain Bin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://infoneer.txstate.edu/Traceability/GrainBinContainer -->
+
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GrainBinContainer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Container"/>
+        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability/ShippingContainer"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Grain Bin that bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Grain Bin Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GrainCart -->
+    <!-- http://infoneer.txstate.edu/Traceability/GrainCart -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GrainCart">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#ContainerArtifact"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GrainCart">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/ContainerArtifact"/>
+        <iof-av:naturalLanguageDefinition>temporary storage container on a farmer&apos;s field  </iof-av:naturalLanguageDefinition>
         <rdfs:label>Grain Cart</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GrainCartContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/GrainCartContainer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GrainCartContainer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Container"/>
-        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability#ShippingContainer"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GrainCartContainer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Container"/>
+        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability/ShippingContainer"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Grain Cart that bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Grain Cart Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GroundMotorVehicle -->
+    <!-- http://infoneer.txstate.edu/Traceability/GrainElevator -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GroundMotorVehicle">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#GroundVehicle"/>
-        <cco:definition>A Ground Vehicle that is designed to receive its motive power from an Engine and is not designed to travel on rails.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GrainElevator">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/OnFarmStorageFacility"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>An On-Farm Storage Facility used for storing grain which contains equipment for moving the grain.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:comment>Grain Bins are parts of Grain Elevators</rdfs:comment>
+        <rdfs:label>Grain Elevator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://infoneer.txstate.edu/Traceability/GroundMotorVehicle -->
+
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GroundMotorVehicle">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/GroundVehicle"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Ground Vehicle that is designed to receive its motive power from an Engine and is not designed to travel on rails.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Ground Motor Vehicle</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GroundSpatialPoint -->
+    <!-- http://infoneer.txstate.edu/Traceability/GroundSpatialPoint -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GroundSpatialPoint">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GroundSpatialPoint">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
         <iof-av:adaptedFrom>CCO</iof-av:adaptedFrom>
         <iof-av:semi-formalNaturalLanguageDefinition>A Zero-Dimensional Spatial Region that is an idealized point located on the surface of an Astronomical Body.</iof-av:semi-formalNaturalLanguageDefinition>
@@ -2876,10 +2892,10 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GroundTrackPoint -->
+    <!-- http://infoneer.txstate.edu/Traceability/GroundTrackPoint -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GroundTrackPoint">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#GroundSpatialPoint"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GroundTrackPoint">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/GroundSpatialPoint"/>
         <iof-av:adaptedFrom>CCO</iof-av:adaptedFrom>
         <iof-av:semi-formalNaturalLanguageDefinition>A Ground Spatial Point that is directly below an Object Track Point.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Ground Track Point</rdfs:label>
@@ -2887,39 +2903,39 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GroundVehicle -->
+    <!-- http://infoneer.txstate.edu/Traceability/GroundVehicle -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#GroundVehicle">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Vehicle"/>
-        <cco:definition>A Vehicle that is designed to convey passengers, cargo, or equipment from one location to another by some form of ground travel.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/GroundVehicle">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Vehicle"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Vehicle that is designed to convey passengers, cargo, or equipment from one location to another by some form of ground travel.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Ground Vehicle</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#IdentifierEncodingScheme -->
+    <!-- http://infoneer.txstate.edu/Traceability/IdentifierEncodingScheme -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#IdentifierEncodingScheme">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/IdentifierEncodingScheme">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
-        <iof-av:naturalLanguageDefinition>A Diective Information Content Entity that prescribes a coding scheme based on a specific code structure.</iof-av:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>A Diective Information Content Entity that prescribes a coding scheme based on a specific code structure or standard.</iof-av:naturalLanguageDefinition>
         <rdfs:label>Identifier Encoding Scheme</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#IntermodalContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/IntermodalContainer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#IntermodalContainer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#ContainerArtifact"/>
-        <cco:definition>A Transport Container that used for shipping and is designed and built with standardized dimensions for intermodal freight transport.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/IntermodalContainer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/ContainerArtifact"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Transport Container that used during Transport Process and is designed and built with standardized dimensions for intermodal freight transport.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Intermodal Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Liter -->
+    <!-- http://infoneer.txstate.edu/Traceability/Liter -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Liter">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Liter">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnitOfVolume"/>
         <iof-av:naturalLanguageDefinition>A Measurement Unit of Volume in metric system equal to 1,000 cubic centimeter</iof-av:naturalLanguageDefinition>
         <rdfs:label>Liter</rdfs:label>
@@ -2927,29 +2943,29 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Load -->
+    <!-- http://infoneer.txstate.edu/Traceability/Load -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Load">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Load">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#TraceUnit"/>
+                    <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/TraceUnit"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                        <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability#LoadRole"/>
+                        <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability/LoadRole"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#TraceUnit"/>
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/TraceUnit"/>
         <skos:definition>A Trace Unit that beares a load role.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#LoadID -->
+    <!-- http://infoneer.txstate.edu/Traceability/LoadID -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#LoadID">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/LoadID">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeIdentifier"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Code Identifer that designates a Lot.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Load Number</rdfs:label>
@@ -2957,50 +2973,51 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#LoadRole -->
+    <!-- http://infoneer.txstate.edu/Traceability/LoadRole -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#LoadRole">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#TraceableResourceUnitRole"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/LoadRole">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/TraceableResourceUnitRole"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A TRU role born by objects or object aggregates when they are transferred or transported together.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Load Role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#LossOfQuality -->
+    <!-- http://infoneer.txstate.edu/Traceability/LossOfQuality -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#LossOfQuality">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Change"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/LossOfQuality">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Change"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Change process in which an Independent Continuant ceases to be the bearer of some Quality.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Loss of Quality</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#LossOfRole -->
+    <!-- http://infoneer.txstate.edu/Traceability/LossOfRole -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#LossOfRole">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Change"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/LossOfRole">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Change"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Change process which some Independent Continuant ceases to be the bearer of some Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Loss of Role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Lot -->
+    <!-- http://infoneer.txstate.edu/Traceability/Lot -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Lot">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Lot">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#TraceUnit"/>
+                    <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/TraceUnit"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                        <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability#LotRole"/>
+                        <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability/LotRole"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#TraceUnit"/>
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/TraceUnit"/>
         <iof-av:explanatoryNote>Collection of material, tracked as a unit, that is produced together such that it shares characteristics (e.g. dye lot).</iof-av:explanatoryNote>
         <iof-av:explanatoryNote>From APICS : A quantity produced together and sharing the same production costs and specifications.</iof-av:explanatoryNote>
         <iof-av:semi-formalNaturalLanguageDefinition>A material entity that bears a Lot Role.</iof-av:semi-formalNaturalLanguageDefinition>
@@ -3010,37 +3027,58 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#LotRole -->
+    <!-- http://infoneer.txstate.edu/Traceability/LotRole -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#LotRole">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#TraceableResourceUnitRole"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/LotRole">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/TraceableResourceUnitRole"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A TRU Role borne by some object or object aggregate when they have a shared production or transformation history.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Lot Role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#MaintenanceEvent -->
+    <!-- http://infoneer.txstate.edu/Traceability/MaintenanceEvent -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#MaintenanceEvent">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#CriticalTrackingEvent"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/MaintenanceEvent">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/CriticalTrackingEvent"/>
         <rdfs:label>Maintenance Event</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#MovementEvent -->
+    <!-- http://infoneer.txstate.edu/Traceability/MovedLoadRole -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#MovementEvent">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#CriticalTrackingEvent"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/MovedLoadRole">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/LoadRole"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Load Role borne by some object or object aggregate when it is moved from the Source Container to the Target Container during some Movement Event.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Moved Load Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://infoneer.txstate.edu/Traceability/MovedRole -->
+
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/MovedRole">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Load"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A &apos;material entity&apos; that bears a Moved Load Role.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Moved Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://infoneer.txstate.edu/Traceability/MovementEvent -->
+
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/MovementEvent">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/CriticalTrackingEvent"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Critical Tracking Event in which the location of the participating Trace Unit is changed.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Movement Event</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ObjectPositionReferencePoint -->
+    <!-- http://infoneer.txstate.edu/Traceability/ObjectPositionReferencePoint -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ObjectPositionReferencePoint">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ObjectPositionReferencePoint">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A fiat point that is on the surface of an object and represents the spatial location of the object.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Object Position Reference Point</rdfs:label>
@@ -3048,9 +3086,9 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ObjectTrack -->
+    <!-- http://infoneer.txstate.edu/Traceability/ObjectTrack -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ObjectTrack">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ObjectTrack">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000026"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A One-Dimensional Spatial Region that consists of the idealized line along which an Object has traversed during some motion.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Object Track</rdfs:label>
@@ -3058,9 +3096,9 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ObjectTrackPoint -->
+    <!-- http://infoneer.txstate.edu/Traceability/ObjectTrackPoint -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ObjectTrackPoint">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ObjectTrackPoint">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
         <iof-av:adaptedFrom>CCO</iof-av:adaptedFrom>
         <iof-av:semi-formalNaturalLanguageDefinition>A Zero-Dimensional Spatial Region that is an idealized point where an Object is or was located during some motion.</iof-av:semi-formalNaturalLanguageDefinition>
@@ -3069,46 +3107,56 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#OceanVessel -->
+    <!-- http://infoneer.txstate.edu/Traceability/ObservationEvent -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#OceanVessel">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Watercraft"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ObservationEvent">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/CriticalTrackingEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://infoneer.txstate.edu/Traceability/OceanVessel -->
+
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/OceanVessel">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Watercraft"/>
         <rdfs:label>Ocean Vessle</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#OnFarmStorageFacility -->
+    <!-- http://infoneer.txstate.edu/Traceability/OnFarmStorageFacility -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#OnFarmStorageFacility">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#AgriculturalFacility"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/OnFarmStorageFacility">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/AgriculturalFacility"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>An Agricultural Facility used for storing crops at some Farm Site.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>On-Farm Storage Facility</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#OwnershipChangeEvent -->
+    <!-- http://infoneer.txstate.edu/Traceability/OwnershipChangeEvent -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#OwnershipChangeEvent">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#CriticalTrackingEvent"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/OwnershipChangeEvent">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/CriticalTrackingEvent"/>
         <rdfs:label>Ownership Change Event</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PieceOfAgriculturalEquipment -->
+    <!-- http://infoneer.txstate.edu/Traceability/PieceOfAgriculturalEquipment -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#PieceOfAgriculturalEquipment">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Piece_of_Equipment"/>
-        <bfo:IAO_0000118>Piece of Farm Equipment</bfo:IAO_0000118>
-        <cco:definition>piece of equipment whose function, if realized, is realized in some agricultural process, or some planned process that is part of one.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/PieceOfAgriculturalEquipment">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Piece_of_Equipment"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Piece of Equipment whose function, if realized, is realized in some Agricultural Process.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Piece of Agricultural Equipment</rdfs:label>
+        <skos:altLabel>Piece of Farm Equipment</skos:altLabel>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PieceOfLand -->
+    <!-- http://infoneer.txstate.edu/Traceability/PieceOfLand -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#PieceOfLand">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/PieceOfLand">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
         <iof-av:naturalLanguageDefinition>A surface layer of the earth, bounded by some continuant fiat boundary, which is primarily composed of solid material and is not covered by oceans or other bodies of water.</iof-av:naturalLanguageDefinition>
         <rdfs:label>Piece of Land</rdfs:label>
@@ -3116,28 +3164,29 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PieceOfStorageEquipment -->
+    <!-- http://infoneer.txstate.edu/Traceability/PieceOfStorageEquipment -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#PieceOfStorageEquipment">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Piece_of_Equipment"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/PieceOfStorageEquipment">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Piece_of_Equipment"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Piece of Equipment that has some function, that if realized, is  realized in some storage process.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Piece of Storage Equipment</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PieceOfTtarnsportEquipment -->
+    <!-- http://infoneer.txstate.edu/Traceability/PieceOfTtarnsportEquipment -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#PieceOfTtarnsportEquipment">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Piece_of_Equipment"/>
-        <cco:definition>A Piece of Transport Equipment that is designed to contain (wholly or partially) some material entity.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/PieceOfTtarnsportEquipment">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Piece_of_Equipment"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Piece of Equipment that has some function, that if realized, is  realized in some Transport Process.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Piece of Transport Equipment</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Piece_of_Equipment -->
+    <!-- http://infoneer.txstate.edu/Traceability/Piece_of_Equipment -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Piece_of_Equipment">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Piece_of_Equipment">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <iof-av:semi-formalNaturalLanguageDefinition>An Artifact that has some function, that if realized, is  realized in some planned process</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Piece of Equipment</rdfs:label>
@@ -3145,39 +3194,39 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Planet -->
+    <!-- http://infoneer.txstate.edu/Traceability/Planet -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Planet">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#AstronomicalBody"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Planet">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/AstronomicalBody"/>
         <dc:source>http://purl.obolibrary.org/obo/ENVO_01000800</dc:source>
         <cco:definition>A planet is an astronomical body orbiting a star or stellar remnant that is massive enough to be rounded by its own gravity, is not massive enough to cause thermonuclear fusion, and has cleared its neighbouring region of planetesimals.</cco:definition>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PlannedProcess -->
+    <!-- http://infoneer.txstate.edu/Traceability/PlannedProcess -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#PlannedProcess">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Act"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/PlannedProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <iof-av:semi-formalNaturalLanguageDefinition>An Agentive Process (Action) prescribed by some plan specification that is achieved</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Planned Process</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PortionOfCorn -->
+    <!-- http://infoneer.txstate.edu/Traceability/PortionOfCorn -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#PortionOfCorn">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PortionOfGrain"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/PortionOfCorn">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PortionOfGrain"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Portion of Grain that has only Corn as parts.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Portion of Corn</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PortionOfGrain -->
+    <!-- http://infoneer.txstate.edu/Traceability/PortionOfGrain -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#PortionOfGrain">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/PortionOfGrain">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <iof-av:semi-formalNaturalLanguageDefinition>An Object Aggregate that has only Grains as parts.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Portion of Grain</rdfs:label>
@@ -3185,50 +3234,58 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PortionOfSoybean -->
+    <!-- http://infoneer.txstate.edu/Traceability/PortionOfSoybean -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#PortionOfSoybean">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PortionOfGrain"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/PortionOfSoybean">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PortionOfGrain"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Portion of Grain that has only Soybean as parts.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Portion of Soybean</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PortionOfWheat -->
+    <!-- http://infoneer.txstate.edu/Traceability/PortionOfWheat -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#PortionOfWheat">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PortionOfGrain"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/PortionOfWheat">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PortionOfGrain"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Portion of Grain that has only Wheat as parts.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Portion of Wheat</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#RailCar -->
+    <!-- http://infoneer.txstate.edu/Traceability/ProcessingPlant -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#RailCar">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#ContainerArtifact"/>
-        <bfo:IAO_0000600>large container towed by a rail engine  </bfo:IAO_0000600>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ProcessingPlant">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://infoneer.txstate.edu/Traceability/RailCar -->
+
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/RailCar">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/ContainerArtifact"/>
+        <iof-av:naturalLanguageDefinition>large container towed by a rail engine  </iof-av:naturalLanguageDefinition>
         <rdfs:label>Rail Car</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#RailCarContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/RailCarContainer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#RailCarContainer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Container"/>
-        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability#ShippingContainer"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/RailCarContainer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Container"/>
+        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability/ShippingContainer"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Rail Car that bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Rail Car Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#RoleIdentifier -->
+    <!-- http://infoneer.txstate.edu/Traceability/RoleIdentifier -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#RoleIdentifier">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/RoleIdentifier">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Designative Information Content Entity that designates some Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Role Identifer</rdfs:label>
@@ -3236,170 +3293,187 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#SemiTrailer -->
+    <!-- http://infoneer.txstate.edu/Traceability/SemiTrailer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#SemiTrailer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Trailer"/>
-        <cco:definition>A Trailer without the front axle.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/SemiTrailer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PieceOfTtarnsportEquipment"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Piece of Transport Equipment that is unpowered and is pulled by a powered vehicle and it is detachable from the powered vehicle.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:comment>A Trailer without the front axle.</rdfs:comment>
         <rdfs:label>Semi Trailer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#SemiTruck -->
+    <!-- http://infoneer.txstate.edu/Traceability/SemiTruck -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#SemiTruck">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Truck"/>
-        <bfo:IAO_0000118>semi-trailer truck</bfo:IAO_0000118>
-        <rdfs:comment>A semi-tractor-trailer truck is the combination of a tractor unit and one, or more, semi-trailers to carry freight.</rdfs:comment>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/SemiTruck">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Truck"/>
+        <iof-av:naturalLanguageDefinition>A semi-tractor-trailer truck is the combination of a tractor unit and one, or more, semi-trailers to carry freight.</iof-av:naturalLanguageDefinition>
         <rdfs:label>Semi-Truck</rdfs:label>
+        <skos:altLabel>semi-trailer truck</skos:altLabel>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#ShippingContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/ShippingContainer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#ShippingContainer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Container"/>
-        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability#SubFieldContainer"/>
-        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability#TrailerContainer"/>
-        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability#TruckContainer"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/ShippingContainer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Container"/>
+        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability/SubFieldContainer"/>
+        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability/TrailerContainer"/>
+        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability/TruckContainer"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Shipping Container that bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Shipping Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#SourceContainerRole -->
+    <!-- http://infoneer.txstate.edu/Traceability/Silo -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#SourceContainerRole">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#ContainerRole"/>
-        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability#TargetContainerRole"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Silo">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/StorageContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://infoneer.txstate.edu/Traceability/SourceContainerRole -->
+
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/SourceContainerRole">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/ContainerRole"/>
+        <owl:disjointWith rdf:resource="http://infoneer.txstate.edu/Traceability/TargetContainerRole"/>
         <cco:definition>A Container Role inhered in an object or fiat object part when it wholly or partially contains some material entity that is the input to some Transfer Event.</cco:definition>
         <rdfs:label>Source Container Role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#SourceLoad -->
+    <!-- http://infoneer.txstate.edu/Traceability/SourceLoad -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#SourceLoad">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Load"/>
-        <iof-av:semi-formalNaturalLanguageDefinition>A material entity that bears a Source Load Role.</iof-av:semi-formalNaturalLanguageDefinition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/SourceLoad">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Load"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A &apos;material entity&apos; that bears a Source Load Role.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Source Load</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#SourceLoadRole -->
+    <!-- http://infoneer.txstate.edu/Traceability/SourceLoadRole -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#SourceLoadRole">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#LoadRole"/>
-        <iof-av:semi-formalNaturalLanguageDefinition>A Load Role born by objects or object aggregates when they participate as the input of a Transfer Event.</iof-av:semi-formalNaturalLanguageDefinition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/SourceLoadRole">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/LoadRole"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Load Role borne by objects or object aggregates when they participate as the input of a Transfer Event.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Source Load Role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#SourceLoadRoleID -->
+    <!-- http://infoneer.txstate.edu/Traceability/SourceLoadRoleID -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#SourceLoadRoleID">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#RoleIdentifier"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/SourceLoadRoleID">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/RoleIdentifier"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Designative Information Content Entity that designates some Source Load Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Source Load Role ID</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#StorageContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/StorageContainer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#StorageContainer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PieceOfStorageEquipment"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/StorageContainer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PieceOfStorageEquipment"/>
         <rdfs:label>Storage Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#SubField -->
+    <!-- http://infoneer.txstate.edu/Traceability/SubField -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#SubField">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PieceOfLand"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/SubField">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PieceOfLand"/>
         <iof-av:naturalLanguageDefinition>A Piece of Land that is part of a Field.</iof-av:naturalLanguageDefinition>
         <cco:alternative_label>Field Zone</cco:alternative_label>
+        <rdfs:label>Sub-Field</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#SubFieldContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/SubFieldContainer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#SubFieldContainer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Container"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/SubFieldContainer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Container"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Sub-Field that bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Sub-field Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TargetContainerRole -->
+    <!-- http://infoneer.txstate.edu/Traceability/TargetContainerRole -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TargetContainerRole">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#ContainerRole"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TargetContainerRole">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/ContainerRole"/>
         <cco:definition>A Container Role inhered in an object or object fiat part when it wholly or partially contains some material entity that the output of some Transfer Event.</cco:definition>
         <rdfs:label>Target Container Role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TargetLoad -->
+    <!-- http://infoneer.txstate.edu/Traceability/TargetLoad -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TargetLoad">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Load"/>
-        <iof-av:semi-formalNaturalLanguageDefinition>A material entity that bears a Target Load Role.</iof-av:semi-formalNaturalLanguageDefinition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TargetLoad">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Load"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A &apos;material entity&apos; that bears a Target Load Role.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Target Role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TargetLoadRole -->
+    <!-- http://infoneer.txstate.edu/Traceability/TargetLoadRole -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TargetLoadRole">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#LoadRole"/>
-        <iof-av:semi-formalNaturalLanguageDefinition>A Load Role born by objects or object aggregates when they participate as the output of a Transfer Event.</iof-av:semi-formalNaturalLanguageDefinition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TargetLoadRole">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/LoadRole"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Load Role borne by objects or object aggregates when they participate as the output of a Transfer Event.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Target Load Role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TargetLoadRoleID -->
+    <!-- http://infoneer.txstate.edu/Traceability/TargetLoadRoleID -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TargetLoadRoleID">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#RoleIdentifier"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TargetLoadRoleID">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/RoleIdentifier"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Designative Information Content Entity that designates some Target Load Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Target Load Role ID</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TraceUnit -->
+    <!-- http://infoneer.txstate.edu/Traceability/TraceUnit -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TraceUnit">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TraceUnit">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                        <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability#TraceableResourceUnitRole"/>
+                        <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability/TraceableResourceUnitRole"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <iof-av:explanatoryNote>A collection of material with some shared history.</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>A collection of material with some shared history.</iof-av:naturalLanguageDefinition>
         <iof-av:semi-formalNaturalLanguageDefinition>A material entity that bears a Traceable Resource Unit Role.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Trace Unit</rdfs:label>
+        <skos:altLabel>TRU</skos:altLabel>
+        <skos:altLabel>Traceable Resource Unit</skos:altLabel>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TraceableResourceUnitRole -->
+    <!-- http://infoneer.txstate.edu/Traceability/TraceableResourceUnitRole -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TraceableResourceUnitRole">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TraceableResourceUnitRole">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A role borne by some object or object aggregate when they have a shared history and some agent may have a need to retrieve information about them.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Traceable Resource Unit Role</rdfs:label>
@@ -3407,39 +3481,40 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Trailer -->
+    <!-- http://infoneer.txstate.edu/Traceability/Trailer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Trailer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PieceOfTtarnsportEquipment"/>
-        <cco:definition>A piece of transport equipment that is unpowered and is pulled by a powered vehicle.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Trailer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PieceOfTtarnsportEquipment"/>
+        <iof-av:naturalLanguageDefinition>A Piece of Transport Equipment that is unpowered and is pulled by a powered vehicle and it is not detachable from the powered vehicle.</iof-av:naturalLanguageDefinition>
+        <rdfs:comment>a trailer is fixed to the tractor unit whereas the semi is detachable,</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TrailerContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/TrailerContainer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TrailerContainer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Container"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TrailerContainer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Container"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Trailer that bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Trailer Container</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TransferEvent -->
+    <!-- http://infoneer.txstate.edu/Traceability/TransferEvent -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TransferEvent">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#MovementEvent"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TransferEvent">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/MovementEvent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://infoneer.txstate.edu/Traceability#OccursAt"/>
+                <owl:onProperty rdf:resource="http://infoneer.txstate.edu/Traceability/OccursAt"/>
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GeospatialRegion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability#LoadRole"/>
+                <owl:someValuesFrom rdf:resource="http://infoneer.txstate.edu/Traceability/LoadRole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3449,62 +3524,92 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
             </owl:Restriction>
         </rdfs:subClassOf>
         <iof-av:semi-formalNaturalLanguageDefinition>A Movement Event in which the location of the participating Trace Unit is changed from a Source Container to a Target Container.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Transfer Event</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TransferEventDescription -->
+    <!-- http://infoneer.txstate.edu/Traceability/TransferEventDescription -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TransferEventDescription">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TransferEventDescription">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity"/>
-        <iof-av:naturalLanguageDefinition>A Descriptive Information Content Entity that describes a Transfer Event.</iof-av:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>A Descriptive Information Content Entity that describes some Transfer Event.</iof-av:naturalLanguageDefinition>
         <rdfs:label>Transfer Event Description</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TransferEventID -->
+    <!-- http://infoneer.txstate.edu/Traceability/TransferEventID -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TransferEventID">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#EventIdentifier"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TransferEventID">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/EventIdentifier"/>
         <iof-av:semi-formalNaturalLanguageDefinition>An Event Identifier that designates some Transfer Event.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Transfer Event ID</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TransformationEvent -->
+    <!-- http://infoneer.txstate.edu/Traceability/TransformationEvent -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TransformationEvent">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#CriticalTrackingEvent"/>
-        <rdfs:label>A Critical Tracking Event in which some qualities of the participating Trace Unit changes.</rdfs:label>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TransformationEvent">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/CriticalTrackingEvent"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Critical Tracking Event during which some qualities of the participating Trace Unit change.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Transformation Event</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TransportEvent -->
+    <!-- http://infoneer.txstate.edu/Traceability/TransportEvent -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TransportEvent">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#MovementEvent"/>
-        <iof-av:semi-formalNaturalLanguageDefinition>A Movement Event in which the position or the location of the participating Trace Unit changes.</iof-av:semi-formalNaturalLanguageDefinition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TransportEvent">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/MovementEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://infoneer.txstate.edu/Traceability/ends_at"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://infoneer.txstate.edu/Traceability/starts_at"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Movement Event in which the location of the participating Trace Unit changes from one site to another site.</iof-av:semi-formalNaturalLanguageDefinition>
+        <rdfs:label>Transport Event</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Truck -->
+    <!-- http://infoneer.txstate.edu/Traceability/Truck -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Truck">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#GroundMotorVehicle"/>
-        <cco:definition>A Ground Motor Vehicle that is designed to be used to transport cargo.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Truck">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/GroundMotorVehicle"/>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Ground Motor Vehicle that is designed to be used to transport cargo.</iof-av:semi-formalNaturalLanguageDefinition>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#TruckContainer -->
+    <!-- http://infoneer.txstate.edu/Traceability/TruckContainer -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#TruckContainer">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Container"/>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/TruckContainer">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Container"/>
         <bfo:IAO_0000112>dump truck</bfo:IAO_0000112>
         <iof-av:semi-formalNaturalLanguageDefinition>A Dump Truck that bears a Container Role.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Truck Container</rdfs:label>
@@ -3512,28 +3617,28 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Vehicle -->
+    <!-- http://infoneer.txstate.edu/Traceability/Vehicle -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Vehicle">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Vehicle">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
-        <cco:definition>An Artifcat that is designed to transfer people and cargo.</cco:definition>
+        <iof-av:semi-formalNaturalLanguageDefinition>An Artifcat that is designed to transfer people and cargo.</iof-av:semi-formalNaturalLanguageDefinition>
         <skos:note>CCO&apos;s definition = An Artifact that is designed to facilitate the movement of material entities from one location to another by conveying them there.</skos:note>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Volume -->
+    <!-- http://infoneer.txstate.edu/Traceability/Volume -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Volume">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Volume">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:label>Volume</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#VolumeMeasurementInformationContentEntity -->
+    <!-- http://infoneer.txstate.edu/Traceability/VolumeMeasurementInformationContentEntity -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#VolumeMeasurementInformationContentEntity">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/VolumeMeasurementInformationContentEntity">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Measurement Information Content Entity that is a measurement of the volume of some site or three-dimensional spatial region.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Volume Measurement Information Content Entity</rdfs:label>
@@ -3541,29 +3646,29 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Wagon -->
+    <!-- http://infoneer.txstate.edu/Traceability/Wagon -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Wagon">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#PieceOfTtarnsportEquipment"/>
-        <cco:definition>Piece of Transport Equipment in a rail transport system (railroad or railway) used for carrying cargo or passengers</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Wagon">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/PieceOfTtarnsportEquipment"/>
+        <cco:definition>Piece of Transport Equipment in a rail transport system used for carrying cargo or passengers</cco:definition>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#Watercraft -->
+    <!-- http://infoneer.txstate.edu/Traceability/Watercraft -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#Watercraft">
-        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability#Vehicle"/>
-        <bfo:IAO_0000119>CCO</bfo:IAO_0000119>
-        <cco:definition>A Vehicle that is designed to convey passengers, cargo, or equipment from one location to another by water travel.</cco:definition>
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/Watercraft">
+        <rdfs:subClassOf rdf:resource="http://infoneer.txstate.edu/Traceability/Vehicle"/>
+        <iof-av:directSource>CCO</iof-av:directSource>
+        <iof-av:semi-formalNaturalLanguageDefinition>A Vehicle that is designed to convey passengers, cargo, or equipment from one location to another by water travel.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Watercraft</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#WeightMeasurementInformationContentEntity -->
+    <!-- http://infoneer.txstate.edu/Traceability/WeightMeasurementInformationContentEntity -->
 
-    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability#WeightMeasurementInformationContentEntity">
+    <owl:Class rdf:about="http://infoneer.txstate.edu/Traceability/WeightMeasurementInformationContentEntity">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <iof-av:semi-formalNaturalLanguageDefinition>A Measurement Information Content Entity that is a measurement of the weight of some material entity.</iof-av:semi-formalNaturalLanguageDefinition>
         <rdfs:label>Weight Measurement Information Content Entity</rdfs:label>
@@ -4623,17 +4728,6 @@ instance-of(x, action, t) → ∃y, t′(instance-of(y, intention, t′) &amp; r
     
 
 
-    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/MilitaryTimeZoneIdentifier -->
-
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MilitaryTimeZoneIdentifier">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TimeZoneIdentifier"/>
-        <cco:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Time Zone Identifier that designates a spatial region where the local time is calculated according to the specified offset from Zulu time, which has no offset from Coordinated Universal Time.</cco:definition>
-        <cco:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</cco:is_curated_in_ontology>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Military Time Zone Identifier</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Minute -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Minute">
@@ -4919,310 +5013,329 @@ W3C (https://www.w3.org/TR/NOTE-datetime)</rdfs:comment>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#GLN-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/GLN-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#GLN-1">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#GlobalLocationNumber"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/GLN-1">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/GlobalLocationNumber"/>
         <cco:has_text_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">506001234999</cco:has_text_value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#LoadRole123 -->
+    <!-- http://infoneer.txstate.edu/Traceability/LoadRole123 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#LoadRole123">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#LoadRole"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/LoadRole123">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/LoadRole"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#PortionOfWheat123 -->
+    <!-- http://infoneer.txstate.edu/Traceability/PortionOfWheat123 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#PortionOfWheat123">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#PortionOfWheat"/>
-        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability#LoadRole123"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/PortionOfWheat123">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/PortionOfWheat"/>
+        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability/LoadRole123"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#dateTime-ID-beginning-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/dateTime-ID-beginning-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#dateTime-ID-beginning-1">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/dateTime-ID-beginning-1">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TimeOfDayIdentifier"/>
         <cco:has_datetime_value rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-26T21:30:52</cco:has_datetime_value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#dateTime-ID-beginning-2 -->
+    <!-- http://infoneer.txstate.edu/Traceability/dateTime-ID-beginning-2 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#dateTime-ID-beginning-2">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/dateTime-ID-beginning-2">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TimeOfDayIdentifier"/>
         <cco:has_datetime_value>2019-10-26T22:10:13</cco:has_datetime_value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#dateTime-ID-beginning-3 -->
+    <!-- http://infoneer.txstate.edu/Traceability/dateTime-ID-beginning-3 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#dateTime-ID-beginning-3">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/dateTime-ID-beginning-3">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TimeOfDayIdentifier"/>
         <cco:has_datetime_value>2019-10-27T08:14:32</cco:has_datetime_value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#dateTime-ID-ending-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/dateTime-ID-ending-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#dateTime-ID-ending-1">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/dateTime-ID-ending-1">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TimeOfDayIdentifier"/>
         <cco:has_datetime_value>2019-10-26T21:45:18</cco:has_datetime_value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#dateTime-ID-ending-2 -->
+    <!-- http://infoneer.txstate.edu/Traceability/dateTime-ID-ending-2 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#dateTime-ID-ending-2">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/dateTime-ID-ending-2">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TimeOfDayIdentifier"/>
         <cco:has_datetime_value>2019-10-26T22:30:14</cco:has_datetime_value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#dateTime-ID-ending-3 -->
+    <!-- http://infoneer.txstate.edu/Traceability/dateTime-ID-ending-3 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#dateTime-ID-ending-3">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/dateTime-ID-ending-3">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TimeOfDayIdentifier"/>
-        <cco:designates rdf:resource="http://infoneer.txstate.edu/Traceability#temporal-instant-ending-3"/>
+        <cco:designates rdf:resource="http://infoneer.txstate.edu/Traceability/temporal-instant-ending-3"/>
         <cco:has_datetime_value>2019-10-27T08:35:52</cco:has_datetime_value>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#geospatialRegion-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/gain-of-SLR-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#geospatialRegion-1">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/gain-of-SLR-1">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/GainOfRole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://infoneer.txstate.edu/Traceability/geospatialRegion-1 -->
+
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/geospatialRegion-1">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GeospatialRegion"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#grain-bin-container-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/grain-bin-container-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#grain-bin-container-1">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#GrainBinContainer"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/grain-bin-container-1">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/GrainBinContainer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#grain-bin-container-2 -->
+    <!-- http://infoneer.txstate.edu/Traceability/grain-bin-container-2 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#grain-bin-container-2">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#GrainBinContainer"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/grain-bin-container-2">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/GrainBinContainer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#grain-bin-container-3 -->
+    <!-- http://infoneer.txstate.edu/Traceability/grain-bin-container-3 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#grain-bin-container-3">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#GrainBinContainer"/>
-        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability#dateTime-ID-ending-1"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/grain-bin-container-3">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/GrainBinContainer"/>
+        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability/dateTime-ID-ending-1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#grain-bin-container-4 -->
+    <!-- http://infoneer.txstate.edu/Traceability/grain-bin-container-4 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#grain-bin-container-4">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#GrainBinContainer"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/grain-bin-container-4">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/GrainBinContainer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#portion-of-corn-123 -->
+    <!-- http://infoneer.txstate.edu/Traceability/pg-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#portion-of-corn-123">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#PortionOfCorn"/>
-        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability#source-load-role-1"/>
-        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability#source-load-role-2"/>
-        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability#source-load-role-3"/>
-        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability#target-load-role-1"/>
-        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability#target-load-role-2"/>
-        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability#target-load-role-3"/>
-        <bfo:RO_0001025 rdf:resource="http://infoneer.txstate.edu/Traceability#grain-bin-container-1"/>
-        <bfo:RO_0001025 rdf:resource="http://infoneer.txstate.edu/Traceability#grain-bin-container-2"/>
-        <bfo:RO_0001025 rdf:resource="http://infoneer.txstate.edu/Traceability#grain-bin-container-3"/>
-        <bfo:RO_0001025 rdf:resource="http://infoneer.txstate.edu/Traceability#grain-bin-container-4"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/pg-1">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/PortionOfGrain"/>
+        <sct:participatesIn rdf:resource="http://infoneer.txstate.edu/Traceability/transfer-event-1"/>
+        <bfo:BFO_0000196 rdf:resource="http://infoneer.txstate.edu/Traceability/source-load-role-1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#source-load-role-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/portion-of-corn-123 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#source-load-role-1">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#SourceLoadRole"/>
-        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability#transfer-event-1"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/portion-of-corn-123">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/PortionOfCorn"/>
+        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability/source-load-role-1"/>
+        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability/source-load-role-2"/>
+        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability/source-load-role-3"/>
+        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability/target-load-role-1"/>
+        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability/target-load-role-2"/>
+        <bfo:RO_0000087 rdf:resource="http://infoneer.txstate.edu/Traceability/target-load-role-3"/>
+        <bfo:RO_0001025 rdf:resource="http://infoneer.txstate.edu/Traceability/grain-bin-container-1"/>
+        <bfo:RO_0001025 rdf:resource="http://infoneer.txstate.edu/Traceability/grain-bin-container-2"/>
+        <bfo:RO_0001025 rdf:resource="http://infoneer.txstate.edu/Traceability/grain-bin-container-3"/>
+        <bfo:RO_0001025 rdf:resource="http://infoneer.txstate.edu/Traceability/grain-bin-container-4"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#source-load-role-2 -->
+    <!-- http://infoneer.txstate.edu/Traceability/source-load-role-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#source-load-role-2">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#SourceLoadRole"/>
-        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability#transfer-event-2"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/source-load-role-1">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/SourceLoadRole"/>
+        <sct:participatesIn rdf:resource="http://infoneer.txstate.edu/Traceability/gain-of-SLR-1"/>
+        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability/transfer-event-1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#source-load-role-3 -->
+    <!-- http://infoneer.txstate.edu/Traceability/source-load-role-2 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#source-load-role-3">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#SourceLoadRole"/>
-        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability#transfer-event-3"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/source-load-role-2">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/SourceLoadRole"/>
+        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability/transfer-event-2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#target-load-role-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/source-load-role-3 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#target-load-role-1">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#TargetLoadRole"/>
-        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability#transfer-event-1"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/source-load-role-3">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/SourceLoadRole"/>
+        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability/transfer-event-3"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#target-load-role-2 -->
+    <!-- http://infoneer.txstate.edu/Traceability/target-load-role-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#target-load-role-2">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#TargetLoadRole"/>
-        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability#transfer-event-2"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/target-load-role-1">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/TargetLoadRole"/>
+        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability/transfer-event-1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#target-load-role-3 -->
+    <!-- http://infoneer.txstate.edu/Traceability/target-load-role-2 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#target-load-role-3">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#TargetLoadRole"/>
-        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability#transfer-event-3"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/target-load-role-2">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/TargetLoadRole"/>
+        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability/transfer-event-2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#temporal-instant-beginning-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/target-load-role-3 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#temporal-instant-beginning-1">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/target-load-role-3">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/TargetLoadRole"/>
+        <bfo:BFO_0000054 rdf:resource="http://infoneer.txstate.edu/Traceability/transfer-event-3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://infoneer.txstate.edu/Traceability/temporal-instant-beginning-1 -->
+
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/temporal-instant-beginning-1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
-        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability#dateTime-ID-beginning-1"/>
+        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability/dateTime-ID-beginning-1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#temporal-instant-beginning-2 -->
+    <!-- http://infoneer.txstate.edu/Traceability/temporal-instant-beginning-2 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#temporal-instant-beginning-2">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/temporal-instant-beginning-2">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
-        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability#dateTime-ID-beginning-2"/>
+        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability/dateTime-ID-beginning-2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#temporal-instant-beginning-3 -->
+    <!-- http://infoneer.txstate.edu/Traceability/temporal-instant-beginning-3 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#temporal-instant-beginning-3">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/temporal-instant-beginning-3">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
-        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability#dateTime-ID-beginning-3"/>
+        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability/dateTime-ID-beginning-3"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#temporal-instant-ending-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/temporal-instant-ending-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#temporal-instant-ending-1">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/temporal-instant-ending-1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
-        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability#dateTime-ID-ending-1"/>
+        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability/dateTime-ID-ending-1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#temporal-instant-ending-2 -->
+    <!-- http://infoneer.txstate.edu/Traceability/temporal-instant-ending-2 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#temporal-instant-ending-2">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/temporal-instant-ending-2">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
-        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability#dateTime-ID-ending-2"/>
+        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability/dateTime-ID-ending-2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#temporal-instant-ending-3 -->
+    <!-- http://infoneer.txstate.edu/Traceability/temporal-instant-ending-3 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#temporal-instant-ending-3">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/temporal-instant-ending-3">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
-        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability#dateTime-ID-ending-3"/>
+        <cco:designated_by rdf:resource="http://infoneer.txstate.edu/Traceability/dateTime-ID-ending-3"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#temporal-interval-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/temporal-interval-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#temporal-interval-1">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/temporal-interval-1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <hasBeginningInstant rdf:resource="http://infoneer.txstate.edu/Traceability#temporal-instant-beginning-1"/>
-        <hasEndingInstant rdf:resource="http://infoneer.txstate.edu/Traceability#temporal-instant-ending-1"/>
+        <sct:hasBeginningInstant rdf:resource="http://infoneer.txstate.edu/Traceability/temporal-instant-beginning-1"/>
+        <sct:hasEndingInstant rdf:resource="http://infoneer.txstate.edu/Traceability/temporal-instant-ending-1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#temporal-interval-2 -->
+    <!-- http://infoneer.txstate.edu/Traceability/temporal-interval-2 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#temporal-interval-2">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/temporal-interval-2">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <hasBeginningInstant rdf:resource="http://infoneer.txstate.edu/Traceability#temporal-instant-beginning-2"/>
-        <hasEndingInstant rdf:resource="http://infoneer.txstate.edu/Traceability#temporal-instant-ending-2"/>
+        <sct:hasBeginningInstant rdf:resource="http://infoneer.txstate.edu/Traceability/temporal-instant-beginning-2"/>
+        <sct:hasEndingInstant rdf:resource="http://infoneer.txstate.edu/Traceability/temporal-instant-ending-2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#temporal-interval-3 -->
+    <!-- http://infoneer.txstate.edu/Traceability/temporal-interval-3 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#temporal-interval-3">
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/temporal-interval-3">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <hasBeginningInstant rdf:resource="http://infoneer.txstate.edu/Traceability#temporal-instant-beginning-3"/>
-        <hasEndingInstant rdf:resource="http://infoneer.txstate.edu/Traceability#temporal-instant-ending-3"/>
+        <sct:hasBeginningInstant rdf:resource="http://infoneer.txstate.edu/Traceability/temporal-instant-beginning-3"/>
+        <sct:hasEndingInstant rdf:resource="http://infoneer.txstate.edu/Traceability/temporal-instant-ending-3"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#transfer-event-1 -->
+    <!-- http://infoneer.txstate.edu/Traceability/transfer-event-1 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#transfer-event-1">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#TransferEvent"/>
-        <OccursAt rdf:resource="http://infoneer.txstate.edu/Traceability#geospatialRegion-1"/>
-        <cco:occurs_on rdf:resource="http://infoneer.txstate.edu/Traceability#temporal-interval-1"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/transfer-event-1">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/TransferEvent"/>
+        <sct:OccursAt rdf:resource="http://infoneer.txstate.edu/Traceability/geospatialRegion-1"/>
+        <cco:occurs_on rdf:resource="http://infoneer.txstate.edu/Traceability/temporal-interval-1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#transfer-event-2 -->
+    <!-- http://infoneer.txstate.edu/Traceability/transfer-event-2 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#transfer-event-2">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#TransferEvent"/>
-        <OccursAt rdf:resource="http://infoneer.txstate.edu/Traceability#geospatialRegion-1"/>
-        <cco:occurs_on rdf:resource="http://infoneer.txstate.edu/Traceability#temporal-interval-2"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/transfer-event-2">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/TransferEvent"/>
+        <sct:OccursAt rdf:resource="http://infoneer.txstate.edu/Traceability/geospatialRegion-1"/>
+        <cco:occurs_on rdf:resource="http://infoneer.txstate.edu/Traceability/temporal-interval-2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://infoneer.txstate.edu/Traceability#transfer-event-3 -->
+    <!-- http://infoneer.txstate.edu/Traceability/transfer-event-3 -->
 
-    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability#transfer-event-3">
-        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability#TransferEvent"/>
-        <OccursAt rdf:resource="http://infoneer.txstate.edu/Traceability#geospatialRegion-1"/>
-        <cco:occurs_on rdf:resource="http://infoneer.txstate.edu/Traceability#temporal-interval-3"/>
+    <owl:NamedIndividual rdf:about="http://infoneer.txstate.edu/Traceability/transfer-event-3">
+        <rdf:type rdf:resource="http://infoneer.txstate.edu/Traceability/TransferEvent"/>
+        <sct:OccursAt rdf:resource="http://infoneer.txstate.edu/Traceability/geospatialRegion-1"/>
+        <cco:occurs_on rdf:resource="http://infoneer.txstate.edu/Traceability/temporal-interval-3"/>
     </owl:NamedIndividual>
     
 
@@ -5274,24 +5387,24 @@ W3C (https://www.w3.org/TR/NOTE-datetime)</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#CombineTankContainer"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#FieldContainer"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#GrainBinContainer"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#GrainCartContainer"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#RailCarContainer"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#SubFieldContainer"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#TrailerContainer"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#TruckContainer"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/CombineTankContainer"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/FieldContainer"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/GrainBinContainer"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/GrainCartContainer"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/RailCarContainer"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/SubFieldContainer"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/TrailerContainer"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/TruckContainer"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#CustodyChangeEvent"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#MaintenanceEvent"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#MovementEvent"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#OwnershipChangeEvent"/>
-            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability#TransformationEvent"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/CustodyChangeEvent"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/MaintenanceEvent"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/MovementEvent"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/OwnershipChangeEvent"/>
+            <rdf:Description rdf:about="http://infoneer.txstate.edu/Traceability/TransformationEvent"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
