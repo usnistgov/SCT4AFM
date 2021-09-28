@@ -1,0 +1,1624 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#"
+     xml:base="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:opla="http://ontologydesignpatterns.org/opla#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla#isNativeTo -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla#isNativeTo"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#consistsOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#fallsWithin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#fallsWithin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#follows"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainerType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainerType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFix -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFix"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFurtherDocumentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFurtherDocumentation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifier"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierEncoding -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierEncoding"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierEncodingScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierEncodingScheme"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierSource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasMeasurement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasMeasurement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasMeasurementType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasMeasurementType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasNext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasNext"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasPostcondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasPostcondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasPrecondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasPrecondition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasSTE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasSTE"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasTemporalExtent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasTemporalExtent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#occursAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#occursAt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ofMaterialType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ofMaterialType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ofStuffType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ofStuffType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#partOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#predecessorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#predecessorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#predecessorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#producedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#producedAt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasStringRepresentation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasStringRepresentation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#BeingObservedRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#BeingObservedRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ObservationEvent</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#BeingShippedRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#BeingShippedRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">TransportEvent</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainee"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainer"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasTemporalExtent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainee"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Container"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Container</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Container">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#follows"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Trajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainerType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainerType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#follows"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Trajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifier"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Container</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainerType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainerType">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Container</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#CustodyChangeEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#CustodyChangeEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasSTE"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceCustodianRole"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Agent"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TargetCustodianRole"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Agent"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFurtherDocumentation"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#DocumentationSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Event</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#DocumentationSource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#DocumentationSource">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Event</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#EquipmentRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#EquipmentRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasSTE"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFurtherDocumentation"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#DocumentationSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasPostcondition"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasPrecondition"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Event</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Fix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Fix">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#occursAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#occursAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Time"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trajectory</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Identifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Identifier">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierEncoding"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncoding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierEncoding"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncoding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifier"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasStringRepresentation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasStringRepresentation"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Identifier</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncoding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncoding">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierEncodingScheme"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncodingScheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierSource"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Identifier</opla:isNativeTo>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">IdentifierEncoding</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncodingScheme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncodingScheme">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Identifier</opla:isNativeTo>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">IdentifierEncoding</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierSource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierSource">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Identifier</opla:isNativeTo>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">IdentifierEncoding</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierType">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Identifier</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#InitialFix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#InitialFix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Fix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#MaterialType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#MaterialType">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">TRU</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Observation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Observation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#producedAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ObservationEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#producedAt"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ObservationEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Measurement</opla:isNativeTo>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">QuantityOfMaterial</opla:isNativeTo>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">TRU</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ObservationEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ObservationEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasSTE"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#BeingObservedRole"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#producedAt"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Observation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFurtherDocumentation"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#DocumentationSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Event</opla:isNativeTo>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">QuantityOfMaterial</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#OperatorRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#OperatorRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#OwnerChangeEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#OwnerChangeEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasSTE"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceOwnerRole"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Agent"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TargetOwnerRole"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Agent"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFurtherDocumentation"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#DocumentationSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Event</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Event</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Place">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#fallsWithin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasNext"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Fix"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trajectory</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#QuantityOfMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#QuantityOfMaterial">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ofMaterialType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#MaterialType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Observation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ofMaterialType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#MaterialType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">TRU</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceCustodianRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceCustodianRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CustodyChangeEvent</opla:isNativeTo>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">QuantityOfMaterial</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceOwnerRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceOwnerRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">OwnerChangeEvent</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">MasterEvent</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#consistsOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#QuantityOfMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#follows"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Trajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainee"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#consistsOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#QuantityOfMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifier"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#partOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#predecessorOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#consistsOf"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">QuantityOfMaterial</opla:isNativeTo>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">TRU</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TargetCustodianRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TargetCustodianRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CustodyChangeEvent</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TargetOwnerRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TargetOwnerRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">OwnerChangeEvent</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TargetRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TargetRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">MasterEvent</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TemporalExtent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TemporalExtent">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Container</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TerminalFix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TerminalFix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Fix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Time">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trajectory</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Trajectory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Trajectory">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFix"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Fix"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trajectory</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TransferEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TransferEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasPostcondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasPrecondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasSTE"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceRole"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TargetRole"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFurtherDocumentation"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#DocumentationSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Event</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TransformationActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TransformationActivity">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Event</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TransformationEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TransformationEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasPostcondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasPrecondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasSTE"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceRole"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TargetRole"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#occursAt"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TransformationActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFurtherDocumentation"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#DocumentationSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SourceRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Event</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TransportEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TransportEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasSTE"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#BeingShippedRole"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#assumesRole"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TRU"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFurtherDocumentation"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#DocumentationSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#providesRole"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ParticipantRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Event</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Unit">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trajectory</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Value">
+        <opla:isNativeTo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trajectory</opla:isNativeTo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Container"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainerType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainerType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasSTE"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#SpatialtemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasTemporalExtent"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#TemporalExtent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">31.931641535768414</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">169.9284248002792</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">569.574027135783</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.00855775984995</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">489.8446838388984</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">599.673072352213</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">274.4232564960968</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">258.1247031159831</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.638550242367728</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">168.36535038273246</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">609.8550328257645</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">309.72474427229656</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.96663364475464</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">97.4925715888506</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">138.95318665022825</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">261.2348117818005</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">72.19126456480438</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">135.5062863869187</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">350.23619847911135</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">799.6416383373368</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.458880230248077</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.397701475118383</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">106.4114490345189</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">167.7227567116951</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">196.04197465746873</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">166.20371055632347</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.834332690908</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34.627645316932416</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">126.75590706835818</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2973443678735737</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.86715978899686</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">205.35189867627784</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.044342772473093</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">237.01641519298104</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">51.098127071983804</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">211.45289355151408</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.40343174701377</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">223.91770441019372</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.475491194247033</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.361188457691269</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">69.92331988824203</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">218.31284474010513</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">609.5112155850559</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">429.5349651702779</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">262.0807637601403</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">18.375893200697057</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.46064023386144</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">157.7476696624958</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">257.10537492218356</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">71.636089647181</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">639.7708678402034</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">749.8463169430265</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">52.039626014073235</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">74.92617725513503</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">128.53498864862098</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.347737097796784</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">210.14061461130788</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">459.6725627562274</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">222.08489952761985</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">201.86445804235834</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">189.74372082527915</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.190892297142625</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.0174612364251</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">329.9308978777273</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">286.315535959659</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">27.522851862210345</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">56.30523004227445</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">226.4189527236041</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">208.1389519607959</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.53304207067671</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">218.94742863918378</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">104.74912259582473</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">174.80360084912687</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">88.59181091307714</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">225.63476749157195</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">165.06982193457796</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">295.83985969487617</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.955136862177525</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.90327722807661</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">48.85941182998919</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">116.97371931285606</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">287.5275369502491</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.94557949566808</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">630.4686161286993</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasFix"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Fix"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Trajectory"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierEncoding"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncoding"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Identifier"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierEncodingScheme"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncodingScheme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncoding"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierSource"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierSource"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierEncoding"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasIdentifierType"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#IdentifierType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Identifier"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasValue"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Value"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Observation"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ofMaterialType"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#MaterialType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#QuantityOfMaterial"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainee"/>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainer"/>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#ContainedInRelation"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#hasContainerType"/>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abhia/ontologies/2020/6/untitled-ontology-420#Container"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
